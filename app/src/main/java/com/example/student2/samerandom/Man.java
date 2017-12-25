@@ -29,7 +29,7 @@ float x,y,r=5,vx=-5,vy=-5;
         if (vx>0){
             spriteY=100;
         }
-        else {spriteY=300;}
+        else if (vx<0){spriteY=300;}
         Rect to = new Rect((int) x-50,(int) y-50,(int) x+50,(int) y+50);
         Rect frame =new Rect (nFrame*100,spriteY,nFrame*100+100,spriteY+100);
         if (Math.abs(x-prevX)> dx){
